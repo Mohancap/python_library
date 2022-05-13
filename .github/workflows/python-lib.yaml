@@ -35,6 +35,8 @@ jobs:
       run: python -m build
     - name: Install twine
       run: pip install setuptools twine
+    - name: Install My Library
+      run: pip install arthcalculator
     - name: Run script
       run: python test.py
 #     - name: Publish package
